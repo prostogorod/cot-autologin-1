@@ -32,3 +32,5 @@ RU
 Совместим с Guestproject и другими расширениями
 
 Розробник: Ярослав Романенко (yaroslav.romanenko@gmail.com)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/CrazyFreeMan/cot-autologin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

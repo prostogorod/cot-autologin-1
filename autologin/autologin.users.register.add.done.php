@@ -7,7 +7,6 @@ Hooks=users.register.add.done
 
 if (($cfg['users']['regnoactivation'] || $db->countRows($db_users) == 1) && !isset($_REQUEST['gftype']) && !isset($_REQUEST['gptype']))
 	{
-			require_once cot_incfile('autologin', 'plug');
-			cot_al_autologin($userid);
-			cot_redirect(cot_url('users',array('m' => 'profile'),'',true));
+			$row = $db->query("SELECT user_lostpass,user_token FROM $db_users WHERE user_id=?",$userid)->fetch();
+			cot_redirect(cot_url('login', 'a=check&v='.$row['user_lostpass'].'&token='.$row['user_token'], '', true));    
 	}

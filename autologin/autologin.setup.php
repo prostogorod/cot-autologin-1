@@ -3,8 +3,8 @@
 [BEGIN_COT_EXT]
 Code=autologin
 Name=Auto login
-Description=Auto login after register to profile
-Version=1.0.0
+Description=Auto login after register
+Version=1.1.0
 Date=2015-04-30
 Author=CrazyFreeMan
 Copyright=&copy; CrazyFreeMan (simple-website.in.ua), 2015
